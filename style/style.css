@@ -200,11 +200,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.main-button :hover :focus {
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--hover-logo-btn-color);
-}
+
 /* Модальне вікно  */
 .backdrop {
   position: fixed;
@@ -245,7 +241,17 @@ img {
   background-color: #fff;
   margin: 8px 8px 0 0;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.batoni:hover {
+  color: var(--hover-logo-btn-color);
+}
+.batoni:focus {
+  color: var(--hover-logo-btn-color);
+}
+
 /* Наши преимущества */
 
 .adva-list {
@@ -486,7 +492,7 @@ img {
   line-height: 1.71;
 }
 .address-item:last-child {
-  margin: 0%;
+  margin: 0;
 }
 .container-footer {
   display: flex;
@@ -497,7 +503,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--secondary-color);
 }
-
 .fot-link {
   display: flex;
 }
@@ -510,6 +515,10 @@ img {
   text-transform: uppercase;
 
   margin-bottom: 20px;
+}
+
+.fot-div-link {
+  margin-right: 83px;
 }
 /* кнопки портфолио */
 .button-list {
@@ -537,9 +546,7 @@ img {
   cursor: pointer;
   letter-spacing: 0.03em;
 
-  transition-property: background-color;
-  transition-property: box-shadow;
-  transition-property: color;
+  transition-property: color, box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -651,4 +658,117 @@ img {
 }
 .dd:hover .pp {
   transform: translateY(0);
+}
+
+.fot-input {
+  width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #e5e5e5;
+  background: rgba(47, 48, 58, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  margin-right: 12px;
+}
+.button-telegrm {
+  width: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+  cursor: pointer;
+  background-color: var(--hover-logo-btn-color);
+
+  padding: 10px 29px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.ee {
+  margin-left: 10px;
+}
+.form-fot {
+  display: flex;
+}
+.label-modal {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--maint-text-color);
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal {
+  padding: 40px;
+}
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 12px;
+}
+.input-modal {
+  margin-top: 4px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-modal:hover {
+  fill: var(--hover-logo-btn-color);
+}
+.label-modal:focus-within {
+  fill: var(--hover-logo-btn-color);
+}
+.input-modal:hover {
+  border-color: var(--hover-logo-btn-color);
+  cursor: pointer;
+}
+.input-modal:focus-within {
+  border-color: var(--hover-logo-btn-color);
+}
+.textarea-modal {
+  margin-top: 4px;
+  padding: 12px 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.checkbox-modal {
+  color: var(--maint-text-color);
+  line-height: 1.71;
+}
+.span-modal {
+  color: var(--hover-logo-btn-color);
+  text-decoration: underline;
+}
+.moddal-btn {
+  display: flex;
+  padding: 10px 55px;
+  margin-top: 20px;
+  margin-left: 121px;
+}
+.svg-modal {
+  position: absolute;
+  top: 53%;
+  left: 15px;
 }
