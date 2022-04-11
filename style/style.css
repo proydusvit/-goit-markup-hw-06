@@ -753,13 +753,18 @@ img {
   border-radius: 4px;
   margin-bottom: 20px;
 }
-.checkbox-modal {
+.label-checkbox-modal {
   color: var(--maint-text-color);
   line-height: 1.71;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
 }
+
 .span-modal {
   color: var(--hover-logo-btn-color);
   text-decoration: underline;
+  margin-left: 4px;
 }
 .moddal-btn {
   display: flex;
@@ -771,4 +776,28 @@ img {
   position: absolute;
   top: 53%;
   left: 15px;
+}
+.checkbox-span {
+  display: inline-block;
+
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+
+  margin-right: 8px;
+}
+.checkbox-modal {
+  position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checkbox-modal:checked + .checkbox-span {
+  border-color: transparent;
+  border-radius: 2px;
+  background-image: url('../images/sprite/icn.svg');
+  background-size: contain;
+  background-origin: border-box;
 }

@@ -426,11 +426,11 @@
             
             <button class="batoni" type="button" data-modal-close> X </button>
            
-            <form class="form-modal" action="">
+            <form class="form-modal">
                 
                     <p class="modal-text">Залишіть свої дані, ми вам передзвонимо</p>
-              <label class="label-modal" for="">
-                    Ім'я
+              <label class="label-modal">
+                   Ім'я
                     <input class="input-modal" type="text" name="name">
                         <svg class="svg-modal" width="12px" height="12px">
                             <use href="./images/sprite/symbol-defs.svg#name"></use>
@@ -439,14 +439,14 @@
                 </label>
                 
                 
-                <label class="label-modal"  for="">
+                <label class="label-modal">
                     Телефон
                     <input  class="input-modal" type="text" name="telephone">
                     <svg class="svg-modal" width="13px" height="13px">
                         <use href="./images/sprite/symbol-defs.svg#tel"></use>
                     </svg>
                 </label>
-                <label class="label-modal"  for="">
+                <label class="label-modal">
                     Пошта
                     <input class="input-modal" type="text" name="mail">
                     <svg class="svg-modal" width="15px" height="12px">
@@ -454,14 +454,19 @@
                         </svg>
                     
                 </label>
-                <label class="label-modal"  for="">
+                <label class="label-modal">
                     Коментар
                     <textarea class="textarea-modal" name="Coment" rows="7" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="checkbox-modal" for="">
-                    <input class="" type="checkbox" name="Agreement conditions">
-                    Погоджуюся з розсилкою та приймаю <span class="span-modal">Умови договору</span>
-                </label>
+                <label class="label-checkbox-modal">
+              
+                    <input class="checkbox-modal" type="checkbox" name="Agreement conditions">
+                    <span class="checkbox-span"> </span>
+                   Погоджуюся з розсилкою та приймаю 
+                   <a href="" class="span-modal">Умови договору</a>
+                    
+                   </label>
+        
                 <button class="main-button moddal-btn" type="submit">Відправити</button>
 
             </form>
