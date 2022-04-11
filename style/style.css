@@ -798,6 +798,6 @@ img {
   border-color: transparent;
   border-radius: 2px;
   background-image: url('../images/sprite/icn.svg');
-  background-size: contain;
+  background-position: center;
   background-origin: border-box;
 }
